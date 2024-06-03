@@ -1,0 +1,61 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.progress {
+    background-color: #e9ecef;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    font-size: 1em;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.printer {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d;
+}

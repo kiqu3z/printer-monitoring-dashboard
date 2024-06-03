@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Printer Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Printer Dashboard</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="printer">
+                    <h2>7° Color</h2>
+                    <p>Status: {{ printer1.status }}</p>
+                    <p>IP: 10.80.20.135</p>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: {{ printer1.cyan_level }}%;" aria-valuenow="{{ printer1.cyan_level }}" aria-valuemin="0" aria-valuemax="100">Cyan: {{ printer1.cyan_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{ printer1.magenta_level }}%;" aria-valuenow="{{ printer1.magenta_level }}" aria-valuemin="0" aria-valuemax="100">Magenta: {{ printer1.magenta_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{ printer1.yellow_level }}%;" aria-valuenow="{{ printer1.yellow_level }}" aria-valuemin="0" aria-valuemax="100">Yellow: {{ printer1.yellow_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: {{ printer1.black_level }}%;" aria-valuenow="{{ printer1.black_level }}" aria-valuemin="0" aria-valuemax="100">Black: {{ printer1.black_level }}%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="printer">
+                    <h2>7° C4062FX</h2>
+                    <p>Status: {{ printer3.status }}</p>
+                    <p>IP: 10.80.20.134</p>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: {{ printer3.cyan_level }}%;" aria-valuenow="{{ printer3.cyan_level }}" aria-valuemin="0" aria-valuemax="100">Cyan: {{ printer3.cyan_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{ printer3.magenta_level }}%;" aria-valuenow="{{ printer3.magenta_level }}" aria-valuemin="0" aria-valuemax="100">Magenta: {{ printer3.magenta_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{ printer3.yellow_level }}%;" aria-valuenow="{{ printer3.yellow_level }}" aria-valuemin="0" aria-valuemax="100">Yellow: {{ printer3.yellow_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: {{ printer3.black_level }}%;" aria-valuenow="{{ printer3.black_level }}" aria-valuemin="0" aria-valuemax="100">Black: {{ printer3.black_level }}%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="printer">
+                    <h2>Diretoria</h2>
+                    <p>Status: {{ printer4.status }}</p>
+                    <p>IP: 10.80.20.130</p>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: {{ printer4.cyan_level }}%;" aria-valuenow="{{ printer4.cyan_level }}" aria-valuemin="0" aria-valuemax="100">Cyan: {{ printer4.cyan_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{ printer4.magenta_level }}%;" aria-valuenow="{{ printer4.magenta_level }}" aria-valuemin="0" aria-valuemax="100">Magenta: {{ printer4.magenta_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{ printer4.yellow_level }}%;" aria-valuenow="{{ printer4.yellow_level }}" aria-valuemin="0" aria-valuemax="100">Yellow: {{ printer4.yellow_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: {{ printer4.black_level }}%;" aria-valuenow="{{ printer4.black_level }}" aria-valuemin="0" aria-valuemax="100">Black: {{ printer4.black_level }}%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="printer">
+                    <h2>2° Color (TI)</h2>
+                    <p>Status: {{ printer2.status }}</p>
+                    <p>IP: 10.80.20.136</p>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: {{ printer2.cyan_level }}%;" aria-valuenow="{{ printer2.cyan_level }}" aria-valuemin="0" aria-valuemax="100">Cyan: {{ printer2.cyan_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{ printer2.magenta_level }}%;" aria-valuenow="{{ printer2.magenta_level }}" aria-valuemin="0" aria-valuemax="100">Magenta: {{ printer2.magenta_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{ printer2.yellow_level }}%;" aria-valuenow="{{ printer2.yellow_level }}" aria-valuemin="0" aria-valuemax="100">Yellow: {{ printer2.yellow_level }}%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: {{ printer2.black_level }}%;" aria-valuenow="{{ printer2.black_level }}" aria-valuemin="0" aria-valuemax="100">Black: {{ printer2.black_level }}%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="printer">
+                    <h2>M4080FX</h2>
+                    <p>Status: {{ printer5.status }}</p>
+                    <p>IP: 10.80.20.131</p>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: {{ printer5.black_level }}%;" aria-valuenow="{{ printer5.black_level }}" aria-valuemin="0" aria-valuemax="100">Black: {{ printer5.black_level }}%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="printer">
+<h2>E57540</h2>
+<p>Status: {{ printer6.status }}</p>
+<p>IP: 10.80.20.132</p>
+<div class="progress mb-2">
+    <div class="progress-bar bg-info" role="progressbar" style="width: {{ printer6.cyan_level }}%;" aria-valuenow="{{ printer6.cyan_level }}" aria-valuemin="0" aria-valuemax="100">Cyan: {{ printer6.cyan_level }}%</div>
+</div>
+<div class="progress mb-2">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: {{ printer6.magenta_level }}%;" aria-valuenow="{{ printer6.magenta_level }}" aria-valuemin="0" aria-valuemax="100">Magenta: {{ printer6.magenta_level }}%</div>
+</div>
+<div class="progress mb-2">
+    <div class="progress-bar bg-warning" role="progressbar" style="width: {{ printer6.yellow_level }}%;" aria-valuenow="{{ printer6.yellow_level }}" aria-valuemin="0" aria-valuemax="100">Yellow: {{ printer6.yellow_level }}%</div>
+</div>
+<div class="progress mb-2">
+    <div class="progress-bar bg-dark" role="progressbar" style="width: {{ printer6.black_level }}%;" aria-valuenow="{{ printer6.black_level }}" aria-valuemin="0" aria-valuemax="100">Black: {{ printer6.black_level }}%</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="text-center mt-4">
+    <p>&copy; 2024 Printer Monitoring Dashboard</p>
+</footer>
+</div>
+</body>
+</html>
