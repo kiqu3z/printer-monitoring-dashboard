@@ -20,10 +20,10 @@ def test_snmp(ip, user, auth_key, priv_key, auth_protocol, priv_protocol, oid):
             print(f'{varBind[0]} = {varBind[1]}')
 
 if __name__ == "__main__":
-    ip = '10.80.20.135'
-    user = 'Cpt-Auren'
-    auth_key = 'Cpt-Auren123'
-    priv_key = 'Cpt-Auren123'
+    ip = '192.168.0.1'
+    user = 'User'
+    auth_key = 'auth_key'
+    priv_key = 'priv_key'
     oid = '1.3.6.1.2.1.1.1.0'  # OID padrão para SysDescr
 
     auth_protocol = usmHMACMD5AuthProtocol
