@@ -22,7 +22,7 @@ This Printer Monitoring Dashboard is a web application designed to monitor the s
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/kiqu3z/printer-monitoring-dashboard.git
+    git clone https://github.com/kiqu3zMonitor_impressora.git
     cd printer-monitoring-dashboard
     ```
 
