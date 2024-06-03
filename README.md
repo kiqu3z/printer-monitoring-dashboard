@@ -102,8 +102,5 @@ Ensure that the SNMP community string and OIDs are correct and that the printers
 #### Flask Server Issues
 Ensure all dependencies are installed and that the virtual environment is activated (if used).
 
-#### License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 #### Contributing
 Feel free to submit issues, fork the repository, and send pull requests for any improvements or bug fixes.
