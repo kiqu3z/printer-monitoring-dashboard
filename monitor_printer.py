@@ -105,16 +105,16 @@ def get_printer_data(ip, user, auth_key, priv_key, model):
     }
 
 if __name__ == '__main__':
-    user = 'Auren-Cpt'
-    auth_key = 'Cpt-Auren123!'
-    priv_key = 'Cpt-Auren123!'
+    user = 'user'
+    auth_key = 'auth_key'
+    priv_key = 'priv_key'
 
-    printer1 = get_printer_data('10.80.20.135', user, auth_key, priv_key, 'X4220RX')
-    printer2 = get_printer_data('10.80.20.136', user, auth_key, priv_key, 'X4220RX')
-    printer3 = get_printer_data('10.80.20.134', user, auth_key, priv_key, 'C4062FX')
-    printer4 = get_printer_data('10.80.20.130', user, auth_key, priv_key, 'C4062FX')
-    printer5 = get_printer_data('10.80.20.131', user, auth_key, priv_key, 'M4080FX')
-    printer6 = get_printer_data('10.80.20.132', user, auth_key, priv_key, 'E57540')
+    printer1 = get_printer_data('192.168.0.1', user, auth_key, priv_key, 'X4220RX')
+    printer2 = get_printer_data('192.168.0.1', user, auth_key, priv_key, 'X4220RX')
+    printer3 = get_printer_data('192.168.0.1', user, auth_key, priv_key, 'C4062FX')
+    printer4 = get_printer_data('192.168.0.1', user, auth_key, priv_key, 'C4062FX')
+    printer5 = get_printer_data('192.168.0.1', user, auth_key, priv_key, 'M4080FX')
+    printer6 = get_printer_data('192.168.0.1', user, auth_key, priv_key, 'E57540')
 
     print("Printer 1:", printer1)
     print("Printer 2:", printer2)
